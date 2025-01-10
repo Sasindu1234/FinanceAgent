@@ -8,4 +8,6 @@ uvicorn
 groq
 openai
 jinja2
+python-docx
+python-multipart
  

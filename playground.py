@@ -19,7 +19,7 @@ phi.api=os.getenv("PHI_API_KEY")
 web_search_agent=Agent(
     name="Web Search Agent",
     role="Search the web for the information",
-    model=Groq(id="llama3-groq-70b-8192-tool-use-preview"),
+    model=Groq(id="llama-3.3-70b-versatile"),
     tools=[DuckDuckGo()],
     instructions=["Alway include sources"],
     show_tools_calls=True,
@@ -30,7 +30,7 @@ web_search_agent=Agent(
 ## Financial agent
 finance_agent=Agent(
     name="Finance AI Agent",
-    model=Groq(id="llama3-groq-70b-8192-tool-use-preview"),
+    model=Groq(id="llama-3.3-70b-versatile"),
     tools=[
         YFinanceTools(stock_price=True, analyst_recommendations=True, stock_fundamentals=True,
                       company_news=True),
